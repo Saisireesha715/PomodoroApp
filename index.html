@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CozyPomodoro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- <img src="public/Pin by Marina Perez Sierra on Fondos de pantalla (bonitos) _ Desktop wallpaper art Pink wallpaper ipad Spring wallpaper.jpg" alt="Background" class="bg"> -->
+    
+    <div class="container">
+    <div>
+        <h1>Pomodoro</h1>
+        <div class="card">
+            <div class="card-body">
+                <h4 id ="timer-display" class="card-title">25:00</h4>
+                 <!-- Shown before start -->
+        <button id="start" class="btn">Start</button>
+        <button id="create" class="btn">Create</button>
+        
+        <!-- Shown after start -->
+        <button id="pause" class="btn hidden">Pause</button>
+        <button id="reset" class="btn hidden">Reset</button>
+            </div>
+        </div>
+
+         <!-- Custom Timer Form (initially hidden) -->
+<div class="custom-form hidden" id="custom-form">
+  <div class="form-container">
+    <h3>Create Custom Timer</h3>
+    <form id="timer-form">
+      <div class="form-group">
+        <label for="minutes">Focus Duration:</label>
+        <div class="input-box">
+            
+            <input type="number" id="hours" min="1" max="8" value="1" >
+          
+           <input type="number" id="minutes" min="1" max="120" value="25">
+
+        </div>
+        
+      </div>
+      <button type="submit" class="btn">Start Custom Timer</button>
+    </form>
+  </div>
+</div>
+
+    
+
+
+    </div>
+
+
+   
+</div>
+<audio id="alarm" preload="auto">
+  <source src="public/shinoga_e_wa.mp3" type="audio/mpeg">
+  Your browser doesn't support audio elements
+</audio>
+    
+
+<audio id="mouse-click" preload="auto">
+    <source src="public/mouse_click_sound.mp3" type="audio/mpeg">
+     Your browser doesn't support audio elements
+</audio>
+</body>
+</html>
